@@ -38,7 +38,7 @@ jobs:
         git checkout -b gh-pages || git checkout gh-pages
 
         # Remove all existing files
-        ls -A | grep -v "^build$" | xargs rm -r
+        ls -A | grep -E -v '^(build|.git)$' | xargs rm -r
 
         # Copy the build files from the master branch
         cp -r ./build/* .
