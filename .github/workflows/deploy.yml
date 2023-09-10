@@ -32,7 +32,7 @@ jobs:
         # Configure name and email
         git config --global user.name "Rohan Fredriksson"
         git config --global user.email $EMAIL
-        git remote set-url origin "https://RohanFredrikkson:$GITHUB_TOKEN@github.com/RohanFredriksson/RohanFredriksson.github.io.git"
+        #git remote set-url origin "https://RohanFredrikkson:$GITHUB_TOKEN@github.com/RohanFredriksson/RohanFredriksson.github.io.git"
 
         # Create or switch to the gh-pages branch
         git checkout -b gh-pages || git checkout gh-pages
