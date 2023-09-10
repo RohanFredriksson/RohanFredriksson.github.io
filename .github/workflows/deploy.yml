@@ -38,13 +38,13 @@ jobs:
         git checkout -b gh-pages || git checkout gh-pages
 
         # Remove all existing files
-        find ./ -mindepth 1 -type d ! -name "build" -exec rm -r {} \;
+        find .  -mindepth 1 -path ./build -prune -o -exec echo rm -rf {} \;
 
         # Copy the build files from the master branch
         cp -r ./build/* .
 
         # Remove the build directory
-        rm -r build
+        rm -rf build
 
         # Commit and push the changes to gh-pages
         git add .
