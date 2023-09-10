@@ -38,7 +38,7 @@ jobs:
         git ls-files -z | xargs -0 rm -f
 
         # Copy the build files from the master branch
-        cp -r ../build/* .
+        cp -r ./build/* .
 
         # Commit and push the changes to gh-pages
         git add .
