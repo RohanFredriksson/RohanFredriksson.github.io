@@ -34,7 +34,7 @@ jobs:
         git config --global user.email $EMAIL
 
         # Switch to the gh-pages branch
-        git checkout gh-pages
+        git checkout -b gh-pages || git checkout gh-pages
 
         # Pull changes
         git pull
