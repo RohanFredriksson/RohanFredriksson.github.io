@@ -29,9 +29,10 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
         EMAIL: ${{ secrets.EMAIL }}
       run: |
-        # Configure name and email
+        # Configure git
         git config --global user.name "Rohan Fredriksson"
         git config --global user.email $EMAIL
+        git config --global pull.rebase false
 
         # Switch to the gh-pages branch
         git checkout -b gh-pages || git checkout gh-pages
