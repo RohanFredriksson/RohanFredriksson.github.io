@@ -27,7 +27,12 @@ jobs:
     - name: Deploy to gh-pages
       env:
         GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        EMAIL: ${{ secrets.EMAIL }}
       run: |
+        # Configure name and email
+        git config --global user.name "Rohan Fredriksson"
+        git config --global user.email $EMAIL
+
         # Create or switch to the gh-pages branch
         git checkout -b gh-pages || git checkout gh-pages
 
