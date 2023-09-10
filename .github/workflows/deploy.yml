@@ -37,7 +37,7 @@ jobs:
         git checkout -b gh-pages || git checkout gh-pages
 
         # Pull changes
-        git pull
+        git pull origin gh-pages
 
         # Remove all existing files (except .gitignore)
         git ls-files -z | xargs -0 rm -f
