@@ -34,11 +34,9 @@ jobs:
         git config --global user.email $EMAIL
         git config --global pull.rebase false
 
-        # Switch to the gh-pages branch
+        # Get the current gh-pages branch
+        git clone https://github.com/RohanFredriksson/RohanFredriksson.github.io.git
         git checkout gh-pages
-
-        # Pull changes
-        git pull origin gh-pages
 
         # Remove all existing files
         find . -mindepth 1 -type d ! -name "build" -exec rm -r {} \;
