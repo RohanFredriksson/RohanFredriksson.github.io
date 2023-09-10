@@ -39,11 +39,14 @@ jobs:
         # Pull changes
         git pull origin gh-pages
 
-        # Remove all existing files (except .gitignore)
-        git ls-files -z | xargs -0 rm -f
+        # Remove all existing files
+        find . -mindepth 1 -type d ! -name "build" -exec rm -r {} \;
 
         # Copy the build files from the master branch
         cp -r ./build/* .
+
+        # Remove the build directory
+        rm -r build
 
         # Commit and push the changes to gh-pages
         git add .
