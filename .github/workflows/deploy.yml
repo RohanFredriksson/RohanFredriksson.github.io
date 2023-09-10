@@ -1,0 +1,46 @@
+name: Build and Deploy React App
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 14.x
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14.x
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build React app
+      run: npm run build
+
+    - name: Deploy to gh-pages
+      env:
+        MY_SECRET: ${{ secrets.EMAIL }}
+      run: |
+        git config --global user.name "Rohan Fredriksson"
+        git config --global user.email "${EMAIL}"
+
+        # Create or switch to the gh-pages branch
+        git checkout -b gh-pages || git checkout gh-pages
+
+        # Remove all existing files (except .gitignore)
+        git ls-files -z | xargs -0 rm -f
+
+        # Copy the build files from the master branch
+        cp -r ../build/* .
+
+        # Commit and push the changes to gh-pages
+        git add .
+        git commit -m "Deploy to gh-pages"
+        git push origin gh-pages
