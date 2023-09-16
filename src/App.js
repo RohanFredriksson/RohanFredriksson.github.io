@@ -1,17 +1,16 @@
 import React from "react";
 import { Navigation } from './components/Navigation.jsx'; 
 
+import { Home } from './sections/Home.jsx';
+
 //import logo from './assets/logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div style={{overflowX: 'hidden'}}>
       <Navigation/>
-      <section id="home">
-        <h2>Home</h2>
-        <p>Content for Section 1</p>
-      </section>
+      <section id="home"><Home/></section>
       <section id="about">
         <h2>About</h2>
         <p>Content for Section 2</p>

@@ -8,13 +8,11 @@ function Navigation() {
   };
 
   return (
-    <nav>
-      <ul>
-        <li> <button onClick={() => scroll('section1')} />Section 1</li>
-        <li> <button onClick={() => scroll('section2')} />Section 2</li>
-        <li> <button onClick={() => scroll('section3')} />Section 3</li>
+      <ul style={{position: 'absolute', height: 100}}>
+        <li onClick={() => scroll('home')}>Home</li>
+        <li onClick={() => scroll('about')}>About</li>
+        <li onClick={() => scroll('projects')}>Projects</li>
       </ul>
-    </nav>
   );
 
 }
