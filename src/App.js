@@ -1,5 +1,4 @@
 import React from "react";
-import { Navigation } from './components/Navigation.jsx'; 
 
 import { Home } from './sections/Home.jsx';
 
@@ -9,7 +8,6 @@ import './App.css';
 function App() {
   return (
     <div style={{overflowX: 'hidden'}}>
-      <Navigation/>
       <section id="home"><Home/></section>
       <section id="about">
         <h2>About</h2>
