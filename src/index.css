@@ -16,14 +16,17 @@ code {
     monospace;
 }
 
-ul {
+.navigation {
   margin: 0px;
+  padding: 0px;
+  position: 'absolute'; 
+  height: 100px;
 }
 
-ul li {
+.navigation > * {
   list-style-type: none;
   float: left;
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 
 import { Home } from './sections/Home.jsx';
 
@@ -6,6 +6,11 @@ import { Home } from './sections/Home.jsx';
 import './App.css';
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Rohan Fredriksson';
+  }, []);
+
   return (
     <div style={{overflowX: 'hidden'}}>
       <section id="home"><Home/></section>

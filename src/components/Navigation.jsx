@@ -8,7 +8,7 @@ function Navigation() {
   };
 
   return (
-      <ul style={{position: 'absolute', height: 100}}>
+      <ul className="navigation">
         <li onClick={() => scroll('home')}>Home</li>
         <li onClick={() => scroll('about')}>About</li>
         <li onClick={() => scroll('projects')}>Projects</li>
