@@ -1,0 +1,45 @@
+.image-gallery {
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
+
+}
+
+.image-container {
+
+  position: relative;
+  flex: 0 0 calc(33.33% - 10px);
+
+  @media (min-width: 768px) {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.image-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-title {
+  opacity: 1;
+}

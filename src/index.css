@@ -16,23 +16,24 @@ code {
     monospace;
 }
 
-.navigation {
-  margin: 0px;
-  padding: 0px;
-  position: 'absolute'; 
-  height: 100px;
-}
-
-.navigation > * {
-  list-style-type: none;
-  float: left;
-  padding-right: 15px;
-}
-
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   overflow-x: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .content {
+    margin-left: 15vw; 
+    margin-right: 15vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    margin-left: 5vw; 
+    margin-right: 5vw;
+  }
 }

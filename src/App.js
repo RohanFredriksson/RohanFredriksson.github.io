@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 
-import { Home } from './sections/Home.jsx';
+import Home from './sections/Home.jsx';
+import Projects from './sections/Projects.jsx';
+import Footer from './sections/Footer.jsx';
 
 //import logo from './assets/logo.svg';
 import './App.css';
@@ -18,10 +20,8 @@ function App() {
         <h2>About</h2>
         <p>Content for Section 2</p>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Content for Section 3</p>
-      </section>
+      <section id="projects"><Projects/></section>
+      <section id="footer"><Footer/></section>
     </div>
   );
 }

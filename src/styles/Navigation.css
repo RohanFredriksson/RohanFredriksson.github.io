@@ -1,0 +1,12 @@
+.navigation {
+  margin: 0px;
+  padding: 0px;
+  position: 'absolute'; 
+  height: 100px;
+}
+
+.navigation > * {
+  list-style-type: none;
+  float: left;
+  padding-right: 15px;
+}

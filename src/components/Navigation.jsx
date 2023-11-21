@@ -1,5 +1,7 @@
 import React from "react";
 
+import './../styles/Navigation.css';
+
 function Navigation() {
 
   const scroll = (id) => {
@@ -17,4 +19,4 @@ function Navigation() {
 
 }
 
-export { Navigation };
+export default Navigation;
