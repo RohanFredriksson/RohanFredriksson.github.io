@@ -7,7 +7,7 @@ const ImageGallery = ({ images }) => {
       {images.map((image) => (
         <div key={image.id} className="image-container">
           <a href={image.href}>
-            <img src={image.src} alt={image.title} />
+            {image.contents}
             <div className="image-title">{image.title}</div>
           </a>
         </div>
