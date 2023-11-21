@@ -7,24 +7,38 @@ import './../index.css';
 
 import GIFToContributionAnimation from './../assets/gif-to-contribution.gif';
 import GIFToContribtutionStatic from './../assets/gif-to-contribution-static.png';
+import FractalExploreAnimation from './../assets/fractal-explore.gif';
+import FractalExploreStatic from './../assets/fractal-explore-static.png';
 
 const GIFToContribution = () => {
 
   return (
     <div style={{backgroundColor: '#0d1117'}}>
       <HoverGif 
-          animation={GIFToContributionAnimation} 
-          frame={GIFToContribtutionStatic} 
-          alt={'GIF to Contribution'}
+        animation={GIFToContributionAnimation} 
+        frame={GIFToContribtutionStatic} 
+        alt={'GIF to Contribution'}
       />
     </div>
   );
 
 }
 
+const FractalExplore = () => {
+
+  return (
+    <HoverGif 
+      animation={FractalExploreAnimation} 
+      frame={FractalExploreStatic} 
+      alt={'Fractal Explore'}
+    />
+  );
+
+}
+
 const images = [
     { id: 1, title: 'Pancake Engine', href: 'https://github.com/RohanFredriksson/PancakeEngine', contents: (<GIFToContribution/>)},
-    { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<GIFToContribution/>)},
+    { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<FractalExplore/>)},
     { id: 3, title: 'GIF to Contribution', href: 'https://github.com/RohanFredriksson/GIF-to-Contribution', contents: (<GIFToContribution/>)},
     { id: 4, title: 'Pancake Engine', href: 'https://github.com/RohanFredriksson/PancakeEngine', contents: (<GIFToContribution/>)},
 ];
