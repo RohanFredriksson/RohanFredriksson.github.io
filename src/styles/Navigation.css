@@ -8,5 +8,6 @@
 .navigation > * {
   list-style-type: none;
   float: left;
-  padding-right: 15px;
+  margin-right: 15px;
+  cursor: pointer;
 }
