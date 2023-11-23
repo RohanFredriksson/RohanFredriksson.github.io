@@ -1,0 +1,60 @@
+@media screen and (orientation: landscape) {
+  .maketen-content {
+    margin-left: 15vw; 
+    margin-right: 15vw;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .maketen-content {
+    margin-left: 10vw; 
+    margin-right: 10vw;
+  }
+}
+
+.maketen-gallery {
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 50px;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.maketen-container {
+
+  position: relative;
+  flex: 0 0 30vh;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  @media (min-width: 1200px) {
+    flex: 0 0 calc(25vw - 25px);
+  }
+
+}
+
+.maketen-inner {
+
+  height: 40vh;
+
+  @media (min-width: 1200px) {
+    height: 30vw;
+  }
+
+}
+
+.maketen-whole {
+
+  @media (min-width: 1200px) {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+}

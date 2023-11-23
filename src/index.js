@@ -1,17 +1,24 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import './index.css';
-import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
 
+import Home from './pages/Home';
+import MakeTen from './pages/MakeTen';
+
 const router = createBrowserRouter([
+  
   {
     path: "/",
     element: <Home/>,
     errorElement:<div>TEST</div>,
   },
+
+  {
+    path: "/maketen",
+    element: <MakeTen/>,
+  },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

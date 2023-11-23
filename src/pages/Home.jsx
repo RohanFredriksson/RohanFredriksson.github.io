@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import './../index.css';
+import './../styles/Default.css';
 import './../styles/Navigation.css';
 
 import ImageGallery from '../components/ImageGallery';
@@ -112,7 +112,7 @@ const Projects = () => {
 
 }
 
-function Home() {
+const Home = () => {
 
   useEffect(() => {
 
