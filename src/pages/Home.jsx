@@ -40,9 +40,15 @@ const Landing = () => {
 
   return (
     <div style={{position: 'relative', height: '100vh', color: 'white', fontSize: '2rem', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
-      
+  
       <LandingBackground/>
-      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>Hello World</div>
+    
+      <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+        <p>Hi, my name is</p>
+        <p>Rohan Fredriksson</p>
+      </div>
+    
+    
     </div>
   );
 
@@ -52,6 +58,23 @@ const About = () => {
 
   return (
     <div className="content">
+      
+      <p>My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate about technology, music, and pretty much anything with artistic vision.</p>
+      <p>It is a passion of mine to work on projects in my free time, and I love learning new frameworks, languages and technologies. A carefully curated selection of my best projects are displayed below.</p>
+      <p>In 2023, I graduated from the University of Sydney with a Bachelor of Computing, majoring in Computer Science. Whilst studying at the University of Sydney, I was awarded the Dean's List of Excellence in Academic Performance award.</p>
+
+      <p>I am always learning new languages and frameworks</p>
+
+      <ul>
+        <li>JavaScript (Node.js, React, React Native, Discord.js)</li>
+        <li>C++ (GLFW, OpenGL, GLSL, ImGui)</li>
+        <li>SQL (MySQL, PostgreSQL, SQLite)</li>
+        <li>Python (Flask, Bottle)</li>
+        <li>Java (JavaFX)</li>
+        <li>HTML and CSS</li>
+      </ul>
+
+      <p></p>
 
     </div>
   );

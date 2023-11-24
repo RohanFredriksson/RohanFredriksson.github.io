@@ -4,7 +4,7 @@ const Footer = () => {
 
   const containerStyle = {
     position: 'relative',
-    height: '40vh',
+    height: '10vh',
     backgroundColor: '#14131b',
     color: 'white',
     fontSize: '2rem',
@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <div style={containerStyle}>
-      
+      <p>Rohan Fredriksson</p>
     </div>
   );
 
