@@ -1,0 +1,24 @@
+.footer {
+
+  align-items: center;
+  background-color: #14131b;
+  box-sizing: border-box;
+  color: white;
+  column-gap: 24px;
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: 130px 108px 100px;
+  justify-content: center;
+  line-height: 21.6px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 20px;
+  row-gap: 24px;
+  text-align: center;
+
+  @media (max-width: 470px) {
+    grid-template-columns: 130px 108px;
+  }
+
+}
