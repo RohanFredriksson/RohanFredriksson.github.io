@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       {shouldRender &&
-        <p>Living Legend</p>
+        <p>Software Developer</p>
       }
 
     </div>

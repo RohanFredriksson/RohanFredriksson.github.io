@@ -1,13 +1,13 @@
 .footer {
 
   align-items: center;
-  background-color: #14131b;
+  background-color: #31304D;
   box-sizing: border-box;
   color: white;
   column-gap: 24px;
   display: grid;
   flex-shrink: 0;
-  grid-template-columns: 130px 108px 100px;
+  grid-template-columns: 141px 108px 150px;
   justify-content: center;
   line-height: 21.6px;
   padding-bottom: 20px;
