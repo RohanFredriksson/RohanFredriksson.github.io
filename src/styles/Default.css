@@ -47,3 +47,19 @@ code {
 .content > h1 {
   font-size: calc(25px + 0.390625vw);
 }
+
+.column-container {
+  display: flex;
+}
+
+.column {
+
+  width: 47.5%;
+  margin-right: 5%;
+
+  @media screen and (min-width: 769px) {
+    width: 45%;
+    margin-right: 10%;
+  }
+
+}

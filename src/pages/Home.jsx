@@ -57,22 +57,34 @@ const About = () => {
 
   return (
     <div style={{paddingTop: 60, paddingBottom: 60}} className="content">
-      <h1>About</h1>
-      <br/>
-      <p>My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate about technology, music, and pretty much anything with artistic vision.</p>
-      <br/>
-      <p>In 2023, I graduated from the University of Sydney with a Bachelor of Computing, majoring in Computer Science. Whilst studying at the University of Sydney, I was awarded the Dean's List of Excellence in Academic Performance award.</p>
-      <br/>
-      <p>I am always learning new languages and frameworks</p>
-      <br/>
-      <ul>
-        <li>JavaScript (Node.js, React, React Native, Discord.js)</li>
-        <li>C++ and C (GLFW, OpenGL, GLSL, ImGui)</li>
-        <li>SQL (MySQL, PostgreSQL, SQLite)</li>
-        <li>Python (Flask, Bottle)</li>
-        <li>Java (JavaFX)</li>
-        <li>HTML and CSS</li>
-      </ul>
+
+        <h1>About</h1>
+        <br/>
+
+      <div className='column-container'>
+        
+        <div className='column'>
+
+          <p>My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate about technology, music, and pretty much anything with artistic vision.</p>
+          <br/>
+          <p>In 2023, I graduated from the University of Sydney with a Bachelor of Computing, majoring in Computer Science. Whilst studying at the University of Sydney, I was awarded the Dean's List of Excellence in Academic Performance award.</p>
+          <br/>
+          <p>I am always learning new languages and frameworks.</p>
+        </div>
+
+        <div className='column' style={{marginRight: 0}}>
+          <ul>
+            <li>JavaScript (Node.js, React, React Native, Discord.js)</li>
+            <li>C++ and C (GLFW, OpenGL, GLSL, ImGui)</li>
+            <li>SQL (MySQL, PostgreSQL, SQLite)</li>
+            <li>Python (Flask, Bottle)</li>
+            <li>Java (JavaFX)</li>
+            <li>HTML and CSS</li>
+          </ul> 
+        </div>
+
+      </div>
+
     </div>
   );
 
