@@ -20,7 +20,6 @@ const scroll = (id) => {
   if (element) {element.scrollIntoView({behavior: 'smooth'});}
 };
 
-/*
 const Navigation = () => {
 
   return (
@@ -34,47 +33,30 @@ const Navigation = () => {
 }
 
 const LandingBackground = () => {
-
-  
-  return <div style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#14131b', zIndex: -10}}>
-    
-  </div>;
-
+  return <div style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: '#14131b', zIndex: -10}}></div>;
 };
-*/
 
 const Landing = () => {
 
-  return (
-    <div className="content">
-      <h1 style={{color: 'white', paddingTop: '2vh', fontSize: 'calc(30px + 0.390625vw)'}}>Rohan Fredriksson</h1>
-      <br/>
-    </div>
-  );
-
-
-  /*
   return (
     <div style={{position: 'relative', height: '100vh', color: 'white', fontSize: '2rem', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',}}>
   
       <LandingBackground/>
     
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-        <p>Hi, my name is</p>
-        <p>Rohan Fredriksson</p>
+        <h1>Hi, my name is</h1>
+        <h1>Rohan Fredriksson</h1>
       </div>
 
     </div>
   );
-  */
 
 }
 
 const About = () => {
 
   return (
-    <div className="content">
-      <br/>
+    <div style={{paddingTop: 60, paddingBottom: 60}} className="content">
       <h1>About</h1>
       <br/>
       <p>My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate about technology, music, and pretty much anything with artistic vision.</p>
@@ -91,7 +73,6 @@ const About = () => {
         <li>Java (JavaFX)</li>
         <li>HTML and CSS</li>
       </ul>
-      <br/>
     </div>
   );
 
@@ -144,15 +125,12 @@ const Projects = () => {
   ];  
 
   return (
-    <div className="content">
-
+    <div style={{paddingTop: 60, paddingBottom: 60}} className="content">
       <h1>Projects</h1>
       <br/>
       <p>It is a passion of mine to work on projects in my free time, and I love learning new frameworks, languages and technologies. Most of my projects are open source and can be found on my <a href="https://github.com/RohanFredriksson/">GitHub Profile</a>. A carefully curated selection of my best projects are displayed below.</p>
       <br/>
       <ImageGallery images={images} />
-      <br/>
-
     </div>
   );
 
@@ -161,13 +139,10 @@ const Projects = () => {
 const Contact = () => {
 
   return (
-    <div className="content">
-
-      <h1>Contact</h1>
+    <div style={{paddingTop: 60, paddingBottom: 60}} className="content">
+      <h1>Please Get in Touch!</h1>
       <br/>
       <p>If you want to work on a project together or just want to connect, feel free to reach out on <a href="https://www.linkedin.com/in/rohanfredriksson/">LinkedIn</a>.</p>
-      <br/>
-
     </div>
   )
 
@@ -176,8 +151,6 @@ const Contact = () => {
 const Home = () => {
 
   useEffect(() => {
-
-    document.title = 'Rohan Fredriksson';
 
     scroll(window.location.hash);
 
@@ -196,11 +169,11 @@ const Home = () => {
 
   return (
     <div style={{overflowX: 'hidden', backgroundColor: '#FBFAFE'}}>
-      
-      <section style={{backgroundColor: '#31304D'}} id="home"><Landing/></section>
-      <section id="about"><About/></section>
-      <section id="projects"><Projects/></section>
-      <section id="contact"><Contact/></section>
+
+      <section style={{backgroundColor: '#101517'}} id="home"><Landing/></section>
+      <section style={{backgroundColor: '#ffffff'}} id="about"><About/></section>
+      <section style={{backgroundColor: '#f6f7f7'}} id="projects"><Projects/></section>
+      <section style={{backgroundColor: '#efeae1'}} id="contact"><Contact/></section>
       <section id="footer"><Footer/></section>
 
     </div>
