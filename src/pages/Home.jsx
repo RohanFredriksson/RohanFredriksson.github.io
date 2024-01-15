@@ -24,7 +24,7 @@ const Navigation = () => {
 
   return (
     <ul className="navigation">
-      <li><a className="navigation-link">Resume</a></li>
+      <li><a className="navigation-link" href="https://github.com/RohanFredriksson">Resume</a></li>
       <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#contact'); scroll('contact');}}>Contact</p></li>
       <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#projects'); scroll('projects');}}>Projects</p></li>
       <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#about'); scroll('about');}}>About</p></li>
