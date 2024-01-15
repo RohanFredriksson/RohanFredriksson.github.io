@@ -14,7 +14,7 @@
 
   position: relative;
   flex: 0 0 calc(50% - 10px);
-  border: 1px solid #000;
+  border: 1px solid gray;
   border-radius: 0.5rem;
   overflow: hidden;
 

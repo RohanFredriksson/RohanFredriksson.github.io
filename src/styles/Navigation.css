@@ -1,13 +1,31 @@
 .navigation {
+  
+  right: 0px;
   margin: 0px;
   padding: 0px;
-  position: 'absolute'; 
+  position: absolute; 
   height: 100px;
+
+  @media screen and (min-width: 769px) {
+    right: 100px;
+  }
+
 }
 
-.navigation > * {
+.navigation > li {
   list-style-type: none;
-  float: left;
-  margin-right: 15px;
+  float: right;
+  margin-left: 15px;
+  margin-top: 30px;
+  font-size: calc(20px + 0.390625vw);
+}
+
+.navigation :hover {
+  color: yellow;
+}
+
+.navigation-link {
+  color: white;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
