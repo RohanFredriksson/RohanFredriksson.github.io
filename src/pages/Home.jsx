@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import './../styles/Default.css';
 import './../styles/Navigation.css';
@@ -13,6 +13,7 @@ import FractalExploreAnimation from './../assets/fractal-explore.gif';
 import FractalExploreStatic from './../assets/fractal-explore-static.png';
 import GIFToContributionAnimation from './../assets/gif-to-contribution.gif';
 import GIFToContribtutionStatic from './../assets/gif-to-contribution-static.png';
+import MakeTenStatic from './../assets/make-ten-static.png';
 
 const scroll = (id) => {
   if (typeof id !== 'string') {return;}
@@ -136,12 +137,21 @@ const GIFToContribution = () => {
 
 }
 
+const MakeTen = () => {
+  return <HoverGif
+    animation={MakeTenStatic} 
+    frame={MakeTenStatic} 
+    alt={'Make Ten Calculator'}
+  />
+}
+
 const Projects = () => {
 
   const images = [
     { id: 1, title: 'Pancake Engine', href: 'https://github.com/RohanFredriksson/PancakeEngine', contents: (<PancakeEngine/>)},
     { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<FractalExplore/>)},
     { id: 3, title: 'GIF to Contribution', href: 'https://github.com/RohanFredriksson/GIF-to-Contribution', contents: (<GIFToContribution/>)},
+    { id: 4, title: 'Make Ten Calculator', href: 'https://github.com/RohanFredriksson/MakeTen', contents: <MakeTen/>}
   ];  
 
   return (
@@ -169,23 +179,6 @@ const Contact = () => {
 }
 
 const Home = () => {
-
-  useEffect(() => {
-
-    //scroll(window.location.hash);
-
-    const change = () => {
-      const next = window.location.hash;
-      console.log("Fragment Identifier Changed: ", next);
-    }
-
-    window.addEventListener('hashchange', change);
-
-    return () => {
-      window.removeEventListener('hashchange', change);
-    }
-
-  }, []);
 
   return (
     <div style={{overflowX: 'hidden', backgroundColor: '#FBFAFE'}}>
