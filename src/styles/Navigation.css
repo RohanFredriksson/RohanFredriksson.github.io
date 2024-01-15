@@ -1,26 +1,52 @@
-.navigation {
-  
-  right: 0px;
-  margin: 0px;
-  padding: 0px;
-  position: absolute; 
-  height: 100px;
+.navigation-container {
+
+  position: absolute;
+  width: 100%;
+  top: 30px;
+
+  display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 769px) {
-    right: 100px;
+    justify-content: right;
   }
 
 }
 
-.navigation > li {
-  list-style-type: none;
-  float: right;
-  margin-left: 15px;
-  margin-top: 30px;
-  font-size: calc(20px + 0.390625vw);
+.navigation-list {
+
+  padding: 10px;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  border-radius: 10px;
+  border: 1px solid #253035;
+  background-color: #101517;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  @media screen and (min-width: 769px) {
+    margin-right: 75px;
+  }
+
 }
 
-.navigation :hover {
+.navigation-list > li {
+
+  font-size: calc(15px + 0.390625vw);
+  list-style-type: none;
+  float: right;
+  
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+
+  @media screen and (min-width: 375px) {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    font-size: calc(20px + 0.390625vw);
+  }
+
+}
+
+.navigation-list :hover {
   color: yellow;
 }
 

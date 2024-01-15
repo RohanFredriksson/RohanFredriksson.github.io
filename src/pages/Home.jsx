@@ -23,12 +23,14 @@ const scroll = (id) => {
 const Navigation = () => {
 
   return (
-    <ul className="navigation">
-      <li><a className="navigation-link" href="https://github.com/RohanFredriksson">Resume</a></li>
-      <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#contact'); scroll('contact');}}>Contact</p></li>
-      <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#projects'); scroll('projects');}}>Projects</p></li>
-      <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#about'); scroll('about');}}>About</p></li>
-    </ul>
+    <div className="navigation-container">
+      <ul className="navigation-list">
+        <li><a className="navigation-link" href="https://github.com/RohanFredriksson">Resume</a></li>
+        <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#contact'); scroll('contact');}}>Contact</p></li>
+        <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#projects'); scroll('projects');}}>Projects</p></li>
+        <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#about'); scroll('about');}}>About</p></li>
+      </ul>
+    </div>
   );
 
 }
@@ -70,12 +72,12 @@ const About = () => {
       <div className='column-container'>
         
         <div className='column'>
-
           <p>My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate about technology, music, and pretty much anything with artistic vision.</p>
           <br/>
           <p>In 2023, I graduated from the University of Sydney with a Bachelor of Computing, majoring in Computer Science. Whilst studying at the University of Sydney, I was awarded the Dean's List of Excellence in Academic Performance award.</p>
           <br/>
           <p>I am always learning new languages and frameworks.</p>
+          <br/>
         </div>
 
         <div className='column' style={{marginRight: 0}}>

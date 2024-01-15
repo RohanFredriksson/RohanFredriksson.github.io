@@ -86,13 +86,20 @@ svg {
 }
 
 .column-container {
+  
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
+  }
+
 }
 
 .column {
 
-  width: 47.5%;
-  margin-right: 5%;
+  width: 100%;
+  margin-right: 0%;
 
   @media screen and (min-width: 769px) {
     width: 45%;
