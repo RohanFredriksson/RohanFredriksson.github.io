@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/maketen",
+    path: "/make-ten",
     element: <MakeTen/>,
   },
 

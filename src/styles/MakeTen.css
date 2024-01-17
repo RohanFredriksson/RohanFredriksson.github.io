@@ -1,51 +1,42 @@
-@media screen and (orientation: landscape) {
-  .maketen-content {
-    margin-left: 15vw; 
-    margin-right: 15vw;
+.content {
+
+  font-size: calc(15px + 0.390625vw);
+  margin-left: 5vw; 
+  margin-right: 5vw;
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(10px + 0.390625vw);
+    margin-left: 20vw; 
+    margin-right: 20vw;
   }
+
 }
 
-@media screen and (orientation: portrait) {
-  .maketen-content {
-    margin-left: 10vw; 
-    margin-right: 10vw;
-  }
-}
-
-.maketen-gallery {
+.column-container {
   
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 
-  gap: 50px;
-
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-
-}
-
-.maketen-container {
-
-  position: relative;
-  flex: 0 0 30vh;
-  border: 1px solid #000;
-  border-radius: 0.5rem;
-  overflow: hidden;
-
-  @media (min-width: 769px) {
-    flex: 0 0 calc(25vw - 25px);
+  @media screen and (min-width: 769px) {
+    flex-direction: row;
   }
 
 }
 
-.maketen-inner {
+.column {
 
-  height: 40vh;
+  width: 100%;
+  margin-right: 0%;
 
-  @media (min-width: 769px) {
-    height: 30vw;
+  @media screen and (min-width: 769px) {
+    width: 45%;
+    margin-right: 10%;
   }
 
+}
+
+.maketen {
+  display: inline-block;
+  width: 100vw;
+  min-height: calc(100vh - 176px);
 }
