@@ -33,11 +33,11 @@ function MakeTen() {
 
       <section className="maketen">
 
-        <div className='content'>
+        <div className='maketen-content'>
 
-          <div style={{paddingTop: 60, paddingBottom: 60}} className='column-container'>
+          <div style={{paddingTop: 60, paddingBottom: 60}} className='maketen-column-container'>
           
-            <div className='column'>
+            <div className='maketen-column'>
 
               <h1>Make Ten Calculator</h1>
               <br/>
@@ -69,7 +69,7 @@ function MakeTen() {
 
             </div>
 
-            <div className='column' style={{marginRight: 0}}>
+            <div className='maketen-column' style={{marginRight: 0}}>
               <h1>About</h1>
               <br/>
               <p>The Sydney Trains Make Ten Challenge has become a beloved pastime for commuters seeking a way to make their time on the train more enjoyable.<br/><br/>Each carriage is assigned a unique four-digit number. Using all of the digits from this number, players aim to find equations that sum to 10 using basic arithmetic operations.<br/><br/>This calculator only checks the following operators: addition, subtraction, multiplication and division.<br/><br/>If this calculator is useful to you, please consider buying the Make Ten app. The application has extra features such as a camera scanner and a solution spoiler guard, if you want to know whether a solution exists without being spoiled.</p>
