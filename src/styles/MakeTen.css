@@ -34,7 +34,7 @@
   border-radius: 0.5rem;
   overflow: hidden;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 769px) {
     flex: 0 0 calc(25vw - 25px);
   }
 
@@ -44,17 +44,8 @@
 
   height: 40vh;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 769px) {
     height: 30vw;
-  }
-
-}
-
-.maketen-whole {
-
-  @media (min-width: 1200px) {
-    overflow-x: hidden;
-    overflow-y: hidden;
   }
 
 }

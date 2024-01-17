@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/Home';
-//import MakeTen from './pages/MakeTen';
+import MakeTen from './pages/MakeTen';
 
 const router = createBrowserRouter([
   
@@ -14,14 +14,15 @@ const router = createBrowserRouter([
     errorElement:<div>TEST</div>,
   },
 
-  
+  {
+    path: "/maketen",
+    element: <MakeTen/>,
+  },
+
 ]);
 
 /*
-{
-  path: "/maketen",
-  element: <MakeTen/>,
-},
+
 */
 
 ReactDOM.createRoot(document.getElementById("root")).render(

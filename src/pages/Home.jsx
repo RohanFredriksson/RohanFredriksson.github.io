@@ -58,8 +58,8 @@ const About = () => {
   return (
     <div style={{paddingTop: 60, paddingBottom: 60}} className="content">
 
-        <h1>About</h1>
-        <br/>
+      <h1>About</h1>
+      <br/>
 
       <div className='column-container'>
         

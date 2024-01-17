@@ -110,12 +110,14 @@ svg {
 
 .title-container {
 
-  position: absolute; 
-  top: 40%; 
+  position: absolute;
+  
+  top: 50%; 
   left: 50%; 
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 
   @media screen and (min-width: 769px) {
+    top: 40%;
     left: 20%; 
     transform: translate(0%, -40%);
   }
