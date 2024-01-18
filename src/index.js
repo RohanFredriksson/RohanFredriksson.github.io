@@ -1,12 +1,12 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/Home';
 import MakeTen from './pages/MakeTen';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   
   {
     path: "/",
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/make-ten",
+    path: "make-ten",
     element: <MakeTen/>,
   },
 

@@ -37,10 +37,10 @@ const Landing = () => {
 
       <div className="navigation-container">
         <ul className="navigation-list">
-          <li><a className="navigation-link" href="https://github.com/RohanFredriksson">Resume</a></li>
-          <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#contact'); scroll('contact');}}>Contact</p></li>
-          <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#projects'); scroll('projects');}}>Projects</p></li>
-          <li><p className="navigation-link" onClick={() => {window.history.pushState(null, null, '#about'); scroll('about');}}>About</p></li>
+          <li><a className="navigation-link" href="#make-ten">Resume</a></li>
+          <li><p className="navigation-link" onClick={() => {scroll('contact');}}>Contact</p></li>
+          <li><p className="navigation-link" onClick={() => {scroll('projects');}}>Projects</p></li>
+          <li><p className="navigation-link" onClick={() => {scroll('about');}}>About</p></li>
         </ul>
       </div>
 
