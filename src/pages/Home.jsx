@@ -159,8 +159,8 @@ const Projects = () => {
     { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<FractalExplore/>)},
     { id: 3, title: 'GIF to Contribution', href: 'https://github.com/RohanFredriksson/GIF-to-Contribution', contents: (<GIFToContribution/>)},
     { id: 4, title: 'Make Ten Calculator', href: 'https://github.com/RohanFredriksson/MakeTen', contents: <MakeTen/>},
-    { id: 4, title: 'Encrypted Web Chat', href: 'https://github.com/RohanFredriksson/SecureMessagingWebsite', contents: <SecureMessaging/>},
-    { id: 5, title: 'Discord Music Bot', href: 'https://github.com/RohanFredriksson/RocBot', contents: <RocBot/>},
+    { id: 5, title: 'Encrypted Web Chat', href: 'https://github.com/RohanFredriksson/SecureMessagingWebsite', contents: <SecureMessaging/>},
+    { id: 6, title: 'Discord Music Bot', href: 'https://github.com/RohanFredriksson/RocBot', contents: <RocBot/>},
   ];  
 
   return (
