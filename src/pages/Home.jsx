@@ -158,7 +158,7 @@ const Projects = () => {
     { id: 1, title: 'Pancake Engine', href: 'https://github.com/RohanFredriksson/PancakeEngine', contents: (<PancakeEngine/>)},
     { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<FractalExplore/>)},
     { id: 3, title: 'GIF to Contribution', href: 'https://github.com/RohanFredriksson/GIF-to-Contribution', contents: (<GIFToContribution/>)},
-    { id: 4, title: 'Make Ten Calculator', href: 'https://github.com/RohanFredriksson/MakeTen', contents: <MakeTen/>},
+    { id: 4, title: 'Make Ten Calculator', href: '/#make-ten', contents: <MakeTen/>},
     { id: 5, title: 'Encrypted Web Chat', href: 'https://github.com/RohanFredriksson/SecureMessagingWebsite', contents: <SecureMessaging/>},
     { id: 6, title: 'Discord Music Bot', href: 'https://github.com/RohanFredriksson/RocBot', contents: <RocBot/>},
   ];  
