@@ -7,6 +7,7 @@ import ImageGallery from '../components/ImageGallery';
 import HoverGif from '../components/HoverGif';
 import Footer from '../components/Footer';
 
+import Portrait from './../assets/portrait.png';
 import PancakeEngineAnimation from './../assets/pancake.gif';
 import PancakeEngineStatic from './../assets/pancake-static.png';
 import FractalExploreAnimation from './../assets/fractal-explore.gif';
@@ -35,6 +36,8 @@ const Landing = () => {
         <path fill="#00f5d4" className="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
       </svg>
 
+      <img className="landing-portrait" src={Portrait} alt={'Hi!, thanks for checking in!'}/>
+
       <div className="navigation-container">
         <ul className="navigation-list">
           <li><a className="navigation-link" href="#make-ten">Resume</a></li>
@@ -47,7 +50,7 @@ const Landing = () => {
       <div className="title-container">
         <p className="title">Hi, my name is<br/>Rohan&nbsp;Fredriksson</p>
       </div>
-      
+
     </div>
   );
 
@@ -71,6 +74,7 @@ const About = () => {
           <p>I am always learning new languages and frameworks.</p>
           <br/>
         </div>
+
 
         <div className='column' style={{marginRight: 0}}>
           <ul>

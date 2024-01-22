@@ -114,11 +114,11 @@ svg {
 
   position: absolute;
   
-  top: 50%; 
+  top: max(min(50%, calc(80vh - 70vw)), 20vh); 
   left: 50%; 
   transform: translate(-50%, -50%);
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     top: 40%;
     left: 20%; 
     transform: translate(0%, -40%);
@@ -138,6 +138,24 @@ svg {
 
   @media screen and (min-width: 769px) {
     font-size: 3.5rem; 
+  }
+
+}
+
+.landing-portrait {
+
+  position: absolute;
+  top: 100vh;
+  z-index: 10;
+
+  right: 50vw;
+  transform: translate(50%, -100%);
+  width: min(70vw, 60vh);
+  
+  @media screen and (min-width: 768px) {
+    right: 10vw;
+    transform: translate(0%, -100%);
+    width: min(40vw, 60vh);
   }
 
 }
