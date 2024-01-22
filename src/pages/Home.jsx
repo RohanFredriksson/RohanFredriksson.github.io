@@ -15,8 +15,8 @@ import FractalExploreStatic from './../assets/fractal-explore-static.png';
 import GIFToContributionAnimation from './../assets/gif-to-contribution.gif';
 import GIFToContribtutionStatic from './../assets/gif-to-contribution-static.png';
 import MakeTenStatic from './../assets/make-ten-static.png';
-import SecureMessagingStatic from './../assets/secure-messaging-static.png';
-import RocBotStatic from './../assets/rocbot-static.png';
+//import SecureMessagingStatic from './../assets/secure-messaging-static.png';
+//import RocBotStatic from './../assets/rocbot-static.png';
 
 const scroll = (id) => {
   if (typeof id !== 'string') {return;}
@@ -73,18 +73,24 @@ const About = () => {
           <br/>
           <p>I am always learning new languages and frameworks.</p>
           <br/>
+          <br/>
         </div>
 
 
         <div className='column' style={{marginRight: 0}}>
-          <ul>
-            <li>JavaScript (Node.js, React, React Native, Discord.js)</li>
-            <li>C++ and C (GLFW, OpenGL, GLSL, ImGui)</li>
-            <li>SQL (MySQL, PostgreSQL, SQLite)</li>
-            <li>Python (Flask, Bottle)</li>
-            <li>Java (JavaFX)</li>
-            <li>HTML and CSS</li>
-          </ul> 
+
+          <img className='badge' alt='' src={'https://img.shields.io/badge/javascript-253035?style=for-the-badge&logo=javascript&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/react.js-253035?style=for-the-badge&logo=react&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/discord.js-253035?style=for-the-badge&logo=discord&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/java-253035?style=for-the-badge&logo=openjdk&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/c++-253035?style=for-the-badge&logo=cplusplus&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/c-253035?style=for-the-badge&logo=c&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/opengl-253035?style=for-the-badge&logo=opengl&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/sql-253035?style=for-the-badge&logo=postgresql&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/python-253035?style=for-the-badge&logo=python&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/html-253035?style=for-the-badge&logo=html5&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/css-253035?style=for-the-badge&logo=css3&logoColor=white'}/>
+
         </div>
 
       </div>
@@ -140,6 +146,7 @@ const MakeTen = () => {
   />
 }
 
+/*
 const SecureMessaging = () => {
   return <HoverGif
     animation={SecureMessagingStatic}
@@ -155,6 +162,7 @@ const RocBot = () => {
     alt={'RocBot Discord Music Streaming'}
   />
 }
+*/
 
 const Projects = () => {
 
@@ -163,8 +171,8 @@ const Projects = () => {
     { id: 2, title: 'Fractal Explore', href: 'https://github.com/RohanFredriksson/FractalExplore', contents: (<FractalExplore/>)},
     { id: 3, title: 'GIF to Contribution', href: 'https://github.com/RohanFredriksson/GIF-to-Contribution', contents: (<GIFToContribution/>)},
     { id: 4, title: 'Make Ten Calculator', href: '/#make-ten', contents: <MakeTen/>},
-    { id: 5, title: 'Encrypted Web Chat', href: 'https://github.com/RohanFredriksson/SecureMessagingWebsite', contents: <SecureMessaging/>},
-    { id: 6, title: 'Discord Music Bot', href: 'https://github.com/RohanFredriksson/RocBot', contents: <RocBot/>},
+    /*{ id: 5, title: 'Encrypted Web Chat', href: 'https://github.com/RohanFredriksson/SecureMessagingWebsite', contents: <SecureMessaging/>},*/
+    /*{ id: 6, title: 'Discord Music Bot', href: 'https://github.com/RohanFredriksson/RocBot', contents: <RocBot/>},*/
   ];  
 
   return (
