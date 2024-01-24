@@ -40,7 +40,6 @@ const Landing = () => {
 
       <div className="navigation-container">
         <ul className="navigation-list">
-          <li><a className="navigation-link" href="#make-ten">Resume</a></li>
           <li><p className="navigation-link" onClick={() => {scroll('contact');}}>Contact</p></li>
           <li><p className="navigation-link" onClick={() => {scroll('projects');}}>Projects</p></li>
           <li><p className="navigation-link" onClick={() => {scroll('about');}}>About</p></li>
@@ -55,6 +54,8 @@ const Landing = () => {
   );
 
 }
+
+/* <li><a className="navigation-link" href="#make-ten">Resume</a></li> */
 
 const About = () => {
 
@@ -180,6 +181,7 @@ const Projects = () => {
       <h1>Projects</h1>
       <br/>
       <p>It is a passion of mine to work on projects in my free time, and I love learning new frameworks, languages and technologies. Most of my projects are open source and can be found on my <a href="https://github.com/RohanFredriksson/">GitHub Profile</a>. A carefully curated selection of my best projects are displayed below.</p>
+      <br/>
       <br/>
       <ImageGallery images={images} />
     </div>
