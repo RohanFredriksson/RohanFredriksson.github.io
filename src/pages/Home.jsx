@@ -91,6 +91,7 @@ const About = () => {
           <img className='badge' alt='' src={'https://img.shields.io/badge/python-253035?style=for-the-badge&logo=python&logoColor=white'}/>
           <img className='badge' alt='' src={'https://img.shields.io/badge/html-253035?style=for-the-badge&logo=html5&logoColor=white'}/>
           <img className='badge' alt='' src={'https://img.shields.io/badge/css-253035?style=for-the-badge&logo=css3&logoColor=white'}/>
+          <img className='badge' alt='' src={'https://img.shields.io/badge/git-253035?style=for-the-badge&logo=git&logoColor=white'}/>
 
         </div>
 
