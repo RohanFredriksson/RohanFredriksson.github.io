@@ -18,6 +18,12 @@ h1 {
   font-weight: 300;
 }
 
+h2 {
+  font-family: 'Lora', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: calc(18px + 0.390625vw);
+  font-weight: 300;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

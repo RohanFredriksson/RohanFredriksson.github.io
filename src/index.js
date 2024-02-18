@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 
 import Home from './pages/Home';
 import MakeTen from './pages/MakeTen';
+import MakeTenPrivacyPolicy from "./pages/MakeTenPrivacyPolicy";
 
 const router = createHashRouter([
   
@@ -18,6 +19,11 @@ const router = createHashRouter([
     path: "make-ten",
     element: <MakeTen/>,
   },
+
+  {
+    path: 'make-ten/privacy-policy',
+    element: <MakeTenPrivacyPolicy/>
+  }
 
 ]);
 
