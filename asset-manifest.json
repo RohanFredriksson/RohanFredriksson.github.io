@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.750df084.css",
+    "main.js": "/static/js/main.cabd3ae7.js",
+    "static/js/453.7fa39e66.chunk.js": "/static/js/453.7fa39e66.chunk.js",
+    "static/media/fractal-explore.gif": "/static/media/fractal-explore.8fd163799fa52ea9ccd6.gif",
+    "static/media/portrait.png": "/static/media/portrait.c1473c9a730b4858b9aa.png",
+    "static/media/pancake.gif": "/static/media/pancake.edc94d0df8ecf5096c4a.gif",
+    "static/media/gif-to-contribution.gif": "/static/media/gif-to-contribution.4f87db9d7a592cedde85.gif",
+    "static/media/fractal-explore-static.png": "/static/media/fractal-explore-static.a8a1d2629d62ef79978a.png",
+    "static/media/pancake-static.png": "/static/media/pancake-static.ed023b142b9668d3953a.png",
+    "static/media/gif-to-contribution-static.png": "/static/media/gif-to-contribution-static.9fff490343185c45eea3.png",
+    "static/media/make-ten-static.png": "/static/media/make-ten-static.9dd2f151b331b548968c.png",
+    "index.html": "/index.html",
+    "main.750df084.css.map": "/static/css/main.750df084.css.map",
+    "main.cabd3ae7.js.map": "/static/js/main.cabd3ae7.js.map",
+    "453.7fa39e66.chunk.js.map": "/static/js/453.7fa39e66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.750df084.css",
+    "static/js/main.cabd3ae7.js"
+  ]
+}
