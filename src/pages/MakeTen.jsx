@@ -19,7 +19,7 @@ function MakeTen() {
     setCode(c);
 
     if (!/^[0-9][0-9][0-9][0-9]$/.test(c)) {setAnswer(''); return;}
-    setAnswer(compute(c, 10));
+    setAnswer(compute(c));
 
   }
 
