@@ -3,7 +3,7 @@ name: Build and Deploy Angular App
 on:
   push:
     branches:
-      - production
+      - master
   workflow_dispatch:
 
 permissions:
