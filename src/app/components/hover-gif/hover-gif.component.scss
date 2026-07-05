@@ -2,13 +2,14 @@
   position: relative;
   width: fit-content;
   line-height: 0;
+  overflow: hidden;
 }
 
 .gif-image {
   display: block;
   width: 100%;
   height: auto;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.4s ease, transform 0.6s ease;
 }
 
 .gif-image.static {
@@ -20,6 +21,10 @@
 
 .gif-image.animated {
   opacity: 0;
+}
+
+.gif-container:hover .gif-image {
+  transform: scale(1.03);
 }
 
 .gif-container:hover .gif-image.static {

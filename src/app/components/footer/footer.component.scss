@@ -13,6 +13,14 @@
   row-gap: 24px;
   text-align: center;
 
+  .left {
+    text-align: right;
+  }
+
+  .right {
+    text-align: left;
+  }
+
   @media (max-width: 470px) {
     grid-template-columns: 130px 108px;
   }

@@ -1,15 +1,22 @@
 import { Component } from '@angular/core';
 
 import { FooterComponent } from '../../components/footer/footer.component';
+import { HeaderComponent, NavSection } from '../../components/header/header.component';
 import { ImageGalleryComponent, GalleryItem } from '../../components/image-gallery/image-gallery.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [ImageGalleryComponent, FooterComponent],
+  imports: [ImageGalleryComponent, FooterComponent, HeaderComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  readonly sections: NavSection[] = [
+    { label: 'About', id: 'about' },
+    { label: 'Projects', id: 'projects' },
+    { label: 'Contact', id: 'contact' }
+  ];
+
   readonly images: GalleryItem[] = [
     {
       id: 1,

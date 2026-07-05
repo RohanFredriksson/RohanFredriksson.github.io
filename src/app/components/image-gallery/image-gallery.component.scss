@@ -1,7 +1,7 @@
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 
   @media (min-width: 768px) {
     justify-content: space-between;
@@ -10,14 +10,20 @@
 
 .image-container {
   position: relative;
+  box-sizing: border-box;
   flex: 0 0 calc(50% - 10px);
-  border: 1px solid #111111;
-  border-radius: 0.5rem;
+  border: 1px solid rgba(16, 21, 23, 0.12);
+  border-radius: var(--radius);
   overflow: hidden;
+  transition: border-color 0.3s ease;
 
   @media (min-width: 768px) {
-    flex: 0 0 calc(33.33% - 10px);
+    flex: 0 0 calc(33.33% - 14px);
   }
+}
+
+.image-container:hover {
+  border-color: rgba(16, 21, 23, 0.28);
 }
 
 .image-container img {
@@ -32,9 +38,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(16, 21, 23, 0.78);
   color: white;
-  padding: 8px;
+  font-family: 'Inter', serif;
+  letter-spacing: 0.01em;
+  padding: 10px 12px;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
