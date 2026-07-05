@@ -1,0 +1,98 @@
+<div class="home-page" style="overflow-x: hidden; background-color: #fbfafe">
+  <section style="background-color: #101517" id="home">
+    <div style="position: relative; height: 100vh">
+      <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+        <path fill="#9b5de5" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+        <path fill="#f15bb5" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+        <path fill="#00bbf9" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+        <path fill="#00f5d4" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+      </svg>
+
+      <img class="landing-portrait" src="/portrait.png" alt="Hi!, thanks for checking in!" />
+
+      <div class="navigation-container">
+        <ul class="navigation-list">
+          <li><p class="navigation-link" (click)="scrollTo('contact')">Contact</p></li>
+          <li><p class="navigation-link" (click)="scrollTo('projects')">Projects</p></li>
+          <li><p class="navigation-link" (click)="scrollTo('about')">About</p></li>
+        </ul>
+      </div>
+
+      <div class="title-container">
+        <p class="title">Hi, my name is<br />Rohan&nbsp;Fredriksson</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #ffffff" id="about">
+    <div style="padding-top: 60px; padding-bottom: 60px" class="content">
+      <h1>About</h1>
+      <br />
+
+      <div class="column-container">
+        <div class="column">
+          <p>
+            My name is Rohan Fredriksson. I am a software developer located in Sydney. I'm passionate
+            about technology, music, and pretty much anything with artistic vision.
+          </p>
+          <br />
+          <p>
+            In 2023, I graduated from the University of Sydney with a Bachelor of Computing, majoring
+            in Computer Science. Whilst studying at the University of Sydney, I was awarded the Dean's
+            List of Excellence in Academic Performance award.
+          </p>
+          <br />
+          <p>I am always learning new languages and frameworks.</p>
+          <br />
+          <br />
+        </div>
+
+        <div class="column" style="margin-right: 0">
+          <img class="badge" alt="javascript" src="https://img.shields.io/badge/javascript-253035?style=for-the-badge&logo=javascript&logoColor=white" />
+          <img class="badge" alt="react" src="https://img.shields.io/badge/react.js-253035?style=for-the-badge&logo=react&logoColor=white" />
+          <img class="badge" alt="discord" src="https://img.shields.io/badge/discord.js-253035?style=for-the-badge&logo=discord&logoColor=white" />
+          <img class="badge" alt="java" src="https://img.shields.io/badge/java-253035?style=for-the-badge&logo=openjdk&logoColor=white" />
+          <img class="badge" alt="cplusplus" src="https://img.shields.io/badge/c++-253035?style=for-the-badge&logo=cplusplus&logoColor=white" />
+          <img class="badge" alt="c" src="https://img.shields.io/badge/c-253035?style=for-the-badge&logo=c&logoColor=white" />
+          <img class="badge" alt="opengl" src="https://img.shields.io/badge/opengl-253035?style=for-the-badge&logo=opengl&logoColor=white" />
+          <img class="badge" alt="sql" src="https://img.shields.io/badge/sql-253035?style=for-the-badge&logo=postgresql&logoColor=white" />
+          <img class="badge" alt="python" src="https://img.shields.io/badge/python-253035?style=for-the-badge&logo=python&logoColor=white" />
+          <img class="badge" alt="html" src="https://img.shields.io/badge/html-253035?style=for-the-badge&logo=html5&logoColor=white" />
+          <img class="badge" alt="css" src="https://img.shields.io/badge/css-253035?style=for-the-badge&logo=css3&logoColor=white" />
+          <img class="badge" alt="git" src="https://img.shields.io/badge/git-253035?style=for-the-badge&logo=git&logoColor=white" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #f6f7f7" id="projects">
+    <div style="padding-top: 60px; padding-bottom: 60px" class="content">
+      <h1>Projects</h1>
+      <br />
+      <p>
+        It is a passion of mine to work on projects in my free time, and I love learning new
+        frameworks, languages and technologies. Most of my projects are open source and can be found on
+        my <a href="https://github.com/RohanFredriksson/">GitHub Profile</a>. A carefully curated
+        selection of my best projects are displayed below.
+      </p>
+      <br />
+      <br />
+      <app-image-gallery [images]="images" />
+    </div>
+  </section>
+
+  <section style="background-color: #efeae1" id="contact">
+    <div style="padding-top: 60px; padding-bottom: 60px" class="content">
+      <h1>Please Get in Touch!</h1>
+      <br />
+      <p>
+        If you want to work on a project together or just want to connect, feel free to reach out on
+        <a href="https://www.linkedin.com/in/rohanfredriksson/">LinkedIn</a>.
+      </p>
+    </div>
+  </section>
+
+  <section id="footer">
+    <app-footer />
+  </section>
+</div>

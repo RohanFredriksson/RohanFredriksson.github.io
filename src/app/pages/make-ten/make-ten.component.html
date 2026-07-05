@@ -1,0 +1,59 @@
+<div>
+  <section id="header"><app-header /></section>
+
+  <section class="maketen">
+    <div class="maketen-content">
+      <div style="padding-top: 60px; padding-bottom: 60px" class="maketen-column-container">
+        <div class="maketen-column">
+          <h1>Make Ten Calculator</h1>
+          <br />
+          <p>Enter a four digit train code below to find a solution.</p>
+          <br />
+
+          <input
+            class="otp-input"
+            type="text"
+            inputmode="numeric"
+            maxlength="4"
+            [ngModel]="code"
+            (ngModelChange)="onCodeChange($event)"
+            placeholder="1234"
+            aria-label="Four digit train code"
+          />
+
+          <br />
+          <br />
+
+          @if (answer !== null && answer !== '') {
+            <p>There is a solution!<br /><br />{{ answer }} = 10<br /><br /></p>
+          }
+          @if (answer === null) {
+            <p>There is no solution for this one.<br /><br /><br /><br /></p>
+          }
+          @if (answer === '') {
+            <p><br /><br /><br /><br /></p>
+          }
+        </div>
+
+        <div class="maketen-column" style="margin-right: 0">
+          <h1>About</h1>
+          <br />
+          <p>
+            The Sydney Trains Make Ten Challenge has become a beloved pastime for commuters seeking a
+            way to make their time on the train more enjoyable.<br /><br />
+            Each carriage is assigned a unique four-digit number. Using all of the digits from this
+            number, players aim to find equations that sum to 10 using basic arithmetic operations.
+            <br /><br />
+            This calculator only checks the following operators: addition, subtraction, multiplication
+            and division.<br /><br />
+            If this calculator is useful to you, please consider buying the Make Ten app. The
+            application has extra features such as a camera scanner and a solution spoiler guard, if you
+            want to know whether a solution exists without being spoiled.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer"><app-footer /></section>
+</div>
