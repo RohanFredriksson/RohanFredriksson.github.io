@@ -39,7 +39,7 @@ export class HomeComponent {
     {
       id: 4,
       title: 'Make Ten Calculator',
-      href: '/make-ten',
+      href: '#/make-ten',
       frameSrc: '/make-ten-static.png',
       animationSrc: '/make-ten-static.png',
       alt: 'Make Ten Calculator'
