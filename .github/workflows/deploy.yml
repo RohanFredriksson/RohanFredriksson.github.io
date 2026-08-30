@@ -37,6 +37,11 @@ jobs:
       - name: Build Angular app
         run: npm run build -- --configuration production
 
+      # GitHub Pages has no server-side rewrites; serving index.html as the 404
+      # fallback lets Angular's router render deep links client-side.
+      - name: Add 404 fallback for client-side routing
+        run: cp dist/angular-preview/browser/index.html dist/angular-preview/browser/404.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
