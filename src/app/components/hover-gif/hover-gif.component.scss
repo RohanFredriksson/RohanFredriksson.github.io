@@ -34,3 +34,15 @@
 .gif-container:hover .gif-image.animated {
   opacity: 1;
 }
+
+// A video has no size until its metadata loads, so the still sets the size and the video covers it.
+.gif-container.has-video .gif-image.static {
+  position: relative;
+}
+
+.gif-container.has-video .gif-image.animated {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+}

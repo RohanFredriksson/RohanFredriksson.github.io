@@ -1,4 +1,17 @@
-<div class="gif-container" style="width: 100%; height: 100%">
+<div class="gif-container" [class.has-video]="isVideo" style="width: 100%; height: 100%" (mouseenter)="play()" (mouseleave)="pause()">
   <img class="gif-image static" [src]="frameSrc" [alt]="alt" />
-  <img class="gif-image animated" [src]="animationSrc" [alt]="alt" />
+  @if (isVideo) {
+    <video
+      #video
+      class="gif-image animated"
+      [src]="animationSrc"
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-hidden="true"
+    ></video>
+  } @else {
+    <img class="gif-image animated" [src]="animationSrc" [alt]="alt" />
+  }
 </div>
