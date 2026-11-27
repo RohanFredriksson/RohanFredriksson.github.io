@@ -92,34 +92,12 @@ section {
   overflow: hidden;
 }
 
-.hero-grid {
+.hero-content {
+  box-sizing: border-box;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
-  padding: 116px 6vw 96px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 44px;
-  align-items: center;
-
-  @media screen and (min-width: 900px) {
-    grid-template-columns: 1.05fr 0.95fr;
-    gap: 56px;
-    padding: 0 6vw;
-    align-items: stretch;
-  }
-}
-
-.hero-inner {
-  position: relative;
-  z-index: 1;
-
-  @media screen and (min-width: 900px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 128px 0 104px;
-  }
+  padding: 148px 6vw 104px;
 }
 
 .hero-eyebrow {
@@ -136,7 +114,7 @@ section {
   color: var(--paper);
   line-height: 1.02;
   letter-spacing: -0.01em;
-  font-size: clamp(2.6rem, 6vw, 4.75rem);
+  font-size: clamp(3rem, 7vw, 6rem);
   margin-bottom: 20px;
 }
 
@@ -150,7 +128,7 @@ section {
 
 .hero-role {
   color: rgba(255, 255, 255, 0.82);
-  font-size: clamp(1.15rem, 2.5vw, 1.55rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
   margin-bottom: 14px;
 }
 
@@ -158,56 +136,8 @@ section {
   color: rgba(255, 255, 255, 0.6);
   font-size: clamp(1rem, 1.6vw, 1.2rem);
   line-height: 1.6;
-  max-width: 40ch;
+  max-width: 60ch;
   margin-bottom: 32px;
-}
-
-.hero-media {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius);
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.02);
-
-  @media screen and (min-width: 900px) {
-    aspect-ratio: auto;
-    margin: 84px 0 60px;
-    min-height: 440px;
-  }
-}
-
-.hero-media-placeholder {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(120deg, rgba(155, 93, 229, 0.16), rgba(0, 187, 249, 0.1),
-    rgba(0, 245, 212, 0.14));
-  background-size: 200% 200%;
-  animation: shimmer 6s ease-in-out infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.hero-media-label {
-  font-family: 'Lora', serif;
-  font-style: italic;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.55);
-  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
 }
 
 .hero-actions {
